@@ -93,6 +93,11 @@ gulp.task('default', function (done) {
                         file.basename = '.' + file.basename.slice(1);
                     }
                 }))
+                .pipe(rename(function (file) {
+                    if (file.basename[0] === '{input}') {
+                        file.basename = answers.appName + file.basename.slice(1);
+                    }
+                }))
                 .pipe(conflict('./'))
                 .pipe(gulp.dest('./'))
                 .pipe(install())
