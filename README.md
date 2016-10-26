@@ -8,7 +8,7 @@
 Install `slush-slush-demonstration` globally:
 
 ```bash
-$ npm install -g slush-demo
+$ npm install -g slush-slush-demonstration
 ```
 
 ### Usage
@@ -22,7 +22,7 @@ $ mkdir my-slush-demo
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-demo && slush slush-demo
+$ cd my-slush-demo && slush slush-slush-demonstration
 ```
 
 ## Getting To Know Slush
